@@ -1,9 +1,9 @@
 <template>
   <div
     class="
+      ttt
       flex flex-col
       items-left
-      bg-[#080a3e]
       w-max
       px-[112px]
       py-[80px]
@@ -12,11 +12,10 @@
       rounded-[22px]
     "
   >
-    <p class="text-white text-left text-[36px] font-semibold mb-[43px]">
-      Farming
-    </p>
+    <p class="farming text-left text-[36px] font-semibold mb-[43px]">Farming</p>
     <p
       class="
+        farming
         font-normal
         text-[18px] text-white
         w-[628px]
@@ -59,12 +58,18 @@
 </template>
 
 <style>
+.ttt {
+  background-color: var(--background-color-secondary);
+}
+.farming {
+  color: var(--text-primary-color);
+}
 .actual_apr {
   display: flex;
   align-items: center;
 }
 .actual_title {
-  color: #ffffff;
+  color: var(--text-primary-color);
   font-size: 15px;
   font-weight: 600;
   text-transform: uppercase;
@@ -74,7 +79,7 @@
   display: flex;
   align-items: center;
   padding-left: 20px;
-  background-color: #00032a;
+  background-color: var(--background-color-input);
   width: 108px;
   height: 34px;
   border-radius: 6px;
@@ -97,7 +102,7 @@ button {
   color: #ffffff;
 }
 input {
-  background-color: #00032a;
+  background-color: var(--background-color-input);
   border-radius: 12px;
   height: 57px;
   width: 533px;
@@ -109,7 +114,9 @@ input {
   display: flex;
   justify-content: space-between;
   font-size: 18px;
-  color: #ffffff;
   margin-top: 23px;
+}
+.input_value p {
+  color: var(--text-primary-color);
 }
 </style>

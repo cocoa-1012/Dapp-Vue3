@@ -1,7 +1,14 @@
 <script setup>
 import { ref } from "vue";
 
-const data = [
+const props = defineProps({
+  theme: {
+    type: String,
+    default: "",
+  },
+});
+
+const data_night = [
   {
     id: 1,
     src: "n-face.png",
@@ -45,23 +52,55 @@ const data = [
   },
 ];
 
-defineProps({
-  msg: String,
-});
+const data_day = [
+  {
+    id: 1,
+    src: "d-face.png",
+    linkTo: "https://majestic-owl.netlify.app",
+  },
+  {
+    id: 2,
+    src: "d-tele.png",
+    linkTo: "https://majestic-owl.netlify.app",
+  },
+  {
+    id: 3,
+    src: "d-twit.png",
+    linkTo: "https://majestic-owl.netlify.app",
+  },
+  {
+    id: 4,
+    src: "d-ytb.png",
+    linkTo: "https://majestic-owl.netlify.app",
+  },
+  {
+    id: 5,
+    src: "d-medi.png",
+    linkTo: "https://majestic-owl.netlify.app",
+  },
+
+  {
+    id: 6,
+    src: "d-inst.png",
+    linkTo: "https://majestic-owl.netlify.app",
+  },
+  {
+    id: 7,
+    src: "d-disc.png",
+    linkTo: "https://majestic-owl.netlify.app",
+  },
+  {
+    id: 8,
+    src: "d-link.png",
+    linkTo: "https://majestic-owl.netlify.app",
+  },
+];
 
 const getImageUrl = (name) => {
   return new URL(`../assets/images/${name}`, import.meta.url).href;
 };
 
 const count = ref(0);
-
-// const getImage = (imagePath) => {
-//   return require(imagePath);
-// };
-
-// defineExpose({
-//   getImage,
-// });
 </script>
 
 <template>
@@ -86,9 +125,19 @@ const count = ref(0);
     <div class="contacts">
       <div class="socials">
         <p class="follow">Follow Us</p>
-        <div class="buttons">
+        <div class="buttons" v-if="props.theme === 'dark-theme'">
           <a
-            v-for="item in data"
+            v-for="item in data_night"
+            :key="item.id"
+            :href="item.linkTo"
+            target="_blank"
+          >
+            <img :src="getImageUrl(item.src)" alt="Image" class="logo" />
+          </a>
+        </div>
+        <div class="buttons" v-else>
+          <a
+            v-for="item in data_day"
             :key="item.id"
             :href="item.linkTo"
             target="_blank"
@@ -122,14 +171,14 @@ const count = ref(0);
   align-items: center;
   text-transform: capitalize;
   font-weight: 400;
-  color: #ffffff;
+  color: var(--text-primary-color);
   width: 256px;
   font-size: 11px;
   text-align: left;
 }
 .follow {
   font-size: 13px;
-  color: #ffffff;
+  color: var(--text-primary-color);
   font-weight: 500;
   align-items: center;
   text-align: left;
@@ -154,6 +203,7 @@ const count = ref(0);
   font-weight: 500;
   font-size: 11px;
   margin-left: 8px;
+  border: none;
 }
 .sub_input {
   background-color: #c7c7ce;
