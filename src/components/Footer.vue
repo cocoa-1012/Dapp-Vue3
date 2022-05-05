@@ -5,43 +5,43 @@ const data = [
   {
     id: 1,
     src: "n-face.png",
-    linkTo: "https://moralis-test.netlify.app",
+    linkTo: "https://majestic-owl.netlify.app",
   },
   {
     id: 2,
     src: "n-tele.png",
-    linkTo: "https://moralis-test.netlify.app",
+    linkTo: "https://majestic-owl.netlify.app",
   },
   {
     id: 3,
     src: "n-twit.png",
-    linkTo: "https://moralis-test.netlify.app",
+    linkTo: "https://majestic-owl.netlify.app",
   },
   {
     id: 4,
     src: "n-ytb.png",
-    linkTo: "https://moralis-test.netlify.app",
+    linkTo: "https://majestic-owl.netlify.app",
   },
   {
     id: 5,
     src: "n-medi.png",
-    linkTo: "https://moralis-test.netlify.app",
+    linkTo: "https://majestic-owl.netlify.app",
   },
 
   {
     id: 6,
     src: "n-inst.png",
-    linkTo: "https://moralis-test.netlify.app",
+    linkTo: "https://majestic-owl.netlify.app",
   },
   {
     id: 7,
     src: "n-disc.png",
-    linkTo: "https://moralis-test.netlify.app",
+    linkTo: "https://majestic-owl.netlify.app",
   },
   {
     id: 8,
     src: "n-link.png",
-    linkTo: "https://moralis-test.netlify.app",
+    linkTo: "https://majestic-owl.netlify.app",
   },
 ];
 
