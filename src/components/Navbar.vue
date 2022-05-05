@@ -135,4 +135,7 @@ a {
   text-transform: capitalize;
   margin-left: 45px;
 }
+a:hover {
+  color: pink;
+}
 </style>
