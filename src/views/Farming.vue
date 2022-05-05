@@ -50,9 +50,26 @@
       </div>
       <button>Approve LP</button>
     </div>
-    <div class="actual_apr">
-      <p class="actual_title">Actual Reward APR</p>
-      <p class="actual_value">231.61%</p>
+    <div class="flex items-center">
+      <p class="actual_title text-[15px] font-semibold uppercase mr-[17px]">
+        Actual Reward APR
+      </p>
+      <p
+        class="
+          actual_value
+          flex
+          items-center
+          pl-[20px]
+          w-[108px]
+          h-[34px]
+          rounded-[6px]
+          font-semibold
+          items-center
+          text-white
+        "
+      >
+        231.61%
+      </p>
     </div>
   </div>
 </template>
@@ -70,22 +87,9 @@
 }
 .actual_title {
   color: var(--text-primary-color);
-  font-size: 15px;
-  font-weight: 600;
-  text-transform: uppercase;
-  margin-right: 17px;
 }
 .actual_value {
-  display: flex;
-  align-items: center;
-  padding-left: 20px;
   background-color: var(--background-color-input);
-  width: 108px;
-  height: 34px;
-  border-radius: 6px;
-  font-weight: 600;
-  align-content: center;
-  color: #ffffff;
 }
 .input_group {
   display: flex;

@@ -50,12 +50,77 @@
       </div>
       <button>Approve LP</button>
     </div>
-    <div class="actual_apr">
-      <p class="actual_title">Actual Reward APR</p>
-      <p class="actual_value">231.61%</p>
+    <div class="flex items-center">
+      <p class="actual_title text-[15px] font-semibold uppercase mr-[17px]">
+        Actual Reward APR
+      </p>
+      <p
+        class="
+          actual_value
+          flex
+          items-center
+          pl-[20px]
+          w-[108px]
+          h-[34px]
+          rounded-[6px]
+          font-semibold
+          items-center
+          text-white
+        "
+      >
+        231.61%
+      </p>
     </div>
   </div>
 </template>
 
 <style>
+.ttt {
+  background-color: var(--background-color-secondary);
+}
+.farming {
+  color: var(--text-primary-color);
+}
+.actual_apr {
+  display: flex;
+  align-items: center;
+}
+.actual_title {
+  color: var(--text-primary-color);
+}
+.actual_value {
+  background-color: var(--background-color-input);
+}
+.input_group {
+  display: flex;
+  margin-bottom: 63px;
+}
+button {
+  background-color: #00032a;
+  border: solid 1px #e20267;
+  border-radius: 219px;
+  width: 210px;
+  height: 48px;
+  margin-left: 58px;
+  font-size: 20px;
+  color: #ffffff;
+}
+input {
+  background-color: var(--background-color-input);
+  border-radius: 12px;
+  height: 57px;
+  width: 533px;
+  color: #ffffff;
+  padding-left: 20px;
+}
+
+.input_value {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  margin-top: 23px;
+}
+.input_value p {
+  color: var(--text-primary-color);
+}
 </style>

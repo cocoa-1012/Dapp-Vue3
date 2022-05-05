@@ -2,45 +2,101 @@
   <div
     class="
       ttt
+      relative
       flex flex-col
       items-left
       w-max
       px-[112px]
       py-[80px]
-      mt-[250px]
+      mt-[100px]
       mb-[200px]
       rounded-[22px]
     "
   >
-    <p class="farming text-left text-[36px] font-semibold mb-[43px]">
-      Governance Page
+    <p class="farming text-left text-[36px] font-semibold mb-[20px]">
+      Governance
     </p>
+    <p class="qq text-left text-[20px] font-bold mb-20">Proposals</p>
     <div class="input_group">
-      <div class="input_div">
-        <input type="number" value="0" />
-        <div class="input_value">
-          <p>Your LP: 0</p>
-          <p>Max</p>
+      <div class="input_div flex">
+        <div>
+          <p class="qq text-left text-[12px] mb-3">Description</p>
+          <div
+            class="
+              zz
+              flex
+              items-center
+              mr-[10px]
+              w-[287px]
+              h-[57px]
+              rounded-[12px]
+            "
+          ></div>
+        </div>
+        <div>
+          <p class="qq text-left text-[12px] mb-3">Status</p>
+          <div
+            class="
+              zz
+              flex
+              items-center
+              mr-[10px]
+              w-[82px]
+              h-[57px]
+              rounded-[12px]
+            "
+          ></div>
+        </div>
+        <div>
+          <p class="qq text-left text-[12px] mb-3">Start Date</p>
+          <div
+            class="
+              zz
+              flex
+              items-center
+              mr-[10px]
+              w-[82px]
+              h-[57px]
+              rounded-[12px]
+            "
+          ></div>
+        </div>
+        <div>
+          <p class="qq text-left text-[12px] mb-3">End Date</p>
+          <div
+            class="
+              zz
+              flex
+              items-center
+              mr-[10px]
+              w-[82px]
+              h-[57px]
+              rounded-[12px]
+            "
+          ></div>
+        </div>
+        <div>
+          <p class="qq text-left text-[12px] mb-3">Author</p>
+          <div
+            class="
+              zz
+              flex
+              items-center
+              mr-[10px]
+              w-[82px]
+              h-[57px]
+              rounded-[12px]
+            "
+          ></div>
         </div>
       </div>
-      <button>Approve LP</button>
-    </div>
-    <div class="input_group">
-      <div class="input_div">
-        <input type="number" value="0" />
-        <div class="input_value">
-          <p>Your iBFZ: 0</p>
-          <p>Max</p>
-        </div>
-      </div>
-      <button>Approve LP</button>
-    </div>
-    <div class="actual_apr">
-      <p class="actual_title">Actual Reward APR</p>
-      <p class="actual_value">231.61%</p>
+      <button class="absolute top-24 right-28">Create New</button>
     </div>
   </div>
 </template>
 
 <style>
+.qq {
+  color: var(--text-primary-color);
+}
 </style>

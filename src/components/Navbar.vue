@@ -9,7 +9,7 @@ const count = ref(0);
 </script>
 
 <template>
-  <div class="navbar drop-shadow-lg">
+  <div class="navbar drop-shadow-lg z-50">
     <img src="/src/assets/images/logo.png" alt="Image" class="logo" />
     <div class="routers">
       <router-link to="/">Home</router-link>
