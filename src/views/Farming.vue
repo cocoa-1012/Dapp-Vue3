@@ -7,7 +7,7 @@
       w-max
       px-[112px]
       py-[80px]
-      mt-[250px]
+      mt-[100px]
       mb-[200px]
       rounded-[22px]
     "
