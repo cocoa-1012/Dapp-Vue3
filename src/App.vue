@@ -7,8 +7,10 @@ import Navbar from "./components/Navbar.vue";
 
 <template>
   <Navbar msg="Hello Vue 3 + Vite" />
-  <router-view />
-  <Footer msg="Hello" />
+  <div class="show_background">
+    <router-view />
+    <Footer msg="Hello" />
+  </div>
 </template>
 
 <style>
@@ -19,5 +21,10 @@ import Navbar from "./components/Navbar.vue";
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+.show_background {
+  background-image: url("./assets/images/d-background.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 </style>
