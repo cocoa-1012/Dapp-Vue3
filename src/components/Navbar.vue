@@ -19,7 +19,10 @@ const count = ref(0);
       <router-link to="/farming">Farming</router-link>
     </div>
     <div class="connect">
-      <img src="/src/assets/images/day.png" alt="Image" class="switch" />
+      <div>
+        <img src="/src/assets/images/day.png" alt="Image" class="switch" />
+      </div>
+
       <button id="show-modal" class="connect_button">connect wallet</button>
     </div>
   </div>

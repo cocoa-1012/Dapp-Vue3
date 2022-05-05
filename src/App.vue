@@ -23,6 +23,11 @@ import Navbar from "./components/Navbar.vue";
   color: #2c3e50;
 }
 .show_background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 98.5vw;
+  padding-bottom: 100px;
   background-image: url("./assets/images/d-background.png");
   background-size: 100% auto;
   background-repeat: no-repeat;
