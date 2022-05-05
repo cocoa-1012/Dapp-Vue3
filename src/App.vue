@@ -13,6 +13,7 @@ import Navbar from "./components/Navbar.vue";
 
 <style>
 #app {
+  background-color: #080a3e;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
