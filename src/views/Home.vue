@@ -5,7 +5,8 @@
       dark:bg-secondary
       flex flex-col
       items-left
-      w-max
+      max-w-4xl
+      w-4/5
       px-[80px]
       py-[50px]
       my-[80px]
@@ -30,7 +31,7 @@
         dark:text-white
         font-normal
         text-[18px]
-        w-[628px]
+        w-9/12
         text-left
         capitalize
         mb-[96px]
@@ -42,8 +43,8 @@
       When you add or remove liquidity, your rewards are automatically transfer
       to your wallet.
     </p>
-    <div class="flex mb-16">
-      <div class="input_div">
+    <div class="flex mb-16 w-full justify-between">
+      <div class="flex-grow">
         <input
           type="number"
           value="0"
@@ -52,7 +53,7 @@
             dark:bg-primary
             rounded-xl
             h-16
-            w-[533px]
+            w-full
             text-white
             pl-5
           "
@@ -78,8 +79,8 @@
         Approve LP
       </button>
     </div>
-    <div class="flex mb-16">
-      <div class="input_div">
+    <div class="flex mb-16 w-full justify-between">
+      <div class="flex-grow">
         <input
           type="number"
           value="0"
@@ -87,8 +88,9 @@
             bg-white
             dark:bg-primary
             rounded-xl
+            w-full
             h-16
-            w-[533px]
+            w-4/5
             text-white
             pl-5
           "
