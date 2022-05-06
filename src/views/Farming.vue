@@ -5,10 +5,9 @@
       flex flex-col
       items-left
       w-max
-      px-[112px]
-      py-[80px]
-      mt-[100px]
-      mb-[200px]
+      px-[80px]
+      py-[50px]
+      my-[80px]
       rounded-[22px]
     "
   >
@@ -77,6 +76,7 @@
 <style>
 .ttt {
   background-color: var(--background-color-secondary);
+  box-shadow: var(--shadow-color-box);
 }
 .farming {
   color: var(--text-primary-color);

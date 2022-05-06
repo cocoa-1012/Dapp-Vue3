@@ -28,6 +28,8 @@ const changeTheme = (theme) => {
   --text-primary-color: #00032a;
   --background-color-input: #aaaab6;
   --background-image: url("./assets/images/d-background.png");
+  --shadow-color-navbar: 1px 1px 10px #d1d5db;
+  --shadow-color-box: 0 0 30px #d1d5db;
 }
 
 /* Define styles for the root window with dark - mode preference */
@@ -39,6 +41,8 @@ const changeTheme = (theme) => {
   --text-primary-color: #fff;
   --background-color-input: #00032a;
   --background-image: url("./assets/images/n-background.png");
+  --shadow-color-navbar: 1px 1px 10px #06b6d4;
+  --shadow-color-box: 5px 5px 3px #06b6d499;
 }
 
 #app {

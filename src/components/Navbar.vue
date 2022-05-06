@@ -9,7 +9,7 @@ const count = ref(0);
 </script>
 
 <template>
-  <div class="navbar drop-shadow-lg z-50">
+  <div class="navbar z-50">
     <img src="/src/assets/images/logo.png" alt="Image" class="logo" />
     <div class="routers">
       <router-link to="/">Home</router-link>
@@ -87,6 +87,9 @@ export default {
   justify-content: center;
   align-items: center;
   background-color: var(--background-color-primary);
+
+  /* box-shadow: 1px 1px 10px #06b6d4; */
+  box-shadow: var(--shadow-color-navbar);
   width: 100vw;
 }
 .routers a {
@@ -136,6 +139,6 @@ a {
   margin-left: 45px;
 }
 a:hover {
-  color: pink;
+  color: cyan;
 }
 </style>

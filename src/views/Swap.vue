@@ -5,14 +5,14 @@
       flex flex-col
       items-left
       w-max
-      px-[112px]
-      py-[80px]
-      mt-[100px]
-      mb-[200px]
+      px-[80px]
+      py-[50px]
+      my-[80px]
       rounded-[22px]
+      drop-shadow-2xl
     "
   >
-    <p class="farming text-left text-[36px] font-semibold mb-[43px]">Swap</p>
+    <p class="farming text-left text-[36px] font-semibold mb-[30px]">Swap</p>
     <p class="aa text-[18px] font-semibold text-left my-3">From</p>
     <div class="flex justify-between">
       <div
@@ -34,7 +34,7 @@
     </div>
     <p class="aa text-[18px] font-semibold text-right my-3">Max</p>
 
-    <div class="flex items-center justify-between my-8">
+    <div class="flex items-center justify-between my-4">
       <svg
         width="18"
         height="20"
