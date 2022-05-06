@@ -73,7 +73,7 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 .ttt {
   background-color: var(--background-color-secondary);
   box-shadow: var(--shadow-color-box);

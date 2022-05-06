@@ -33,7 +33,7 @@ const changeTheme = (theme) => {
 }
 
 /* Define styles for the root window with dark - mode preference */
-:root.dark-theme {
+:root.dark {
   --background-color-primary: #00032a;
   --background-color-secondary: #080a3e;
   --button-text-color: #080a3e;

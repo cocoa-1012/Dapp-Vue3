@@ -4,40 +4,79 @@ import { ref } from "vue";
 defineProps({
   msg: String,
 });
-
+const a_class = "text-primary dark:text-white text-sm mx-5 font-semibold";
 const count = ref(0);
 </script>
 
 <template>
-  <div class="navbar z-50">
-    <img src="/src/assets/images/logo.png" alt="Image" class="logo" />
+  <div
+    class="
+      fixed
+      flex
+      justify-between
+      items-center
+      w-screen
+      bg-white
+      dark:bg-primary
+      shadow-md shadow-grayshadow
+      dark:shadow-cyan
+      z-50
+    "
+  >
+    <img src="/src/assets/images/logo.png" alt="Image" class="w-20 h-20 ml-8" />
     <div class="routers">
-      <router-link to="/">Home</router-link>
-      <router-link to="/swap">Swap</router-link>
-      <router-link to="/governance">Governance</router-link>
-      <router-link to="/fiat-on-ramp">Fiat-On-Ramp</router-link>
-      <router-link to="/farming">Farming</router-link>
+      <router-link to="/">
+        <span :class="a_class">Home</span>
+      </router-link>
+      <router-link to="/swap">
+        <span :class="a_class">Swap</span>
+      </router-link>
+      <router-link to="/governance">
+        <span :class="a_class"> Governance </span>
+      </router-link>
+      <router-link to="/fiat-on-ramp">
+        <span :class="a_class"> Fiat-On-Ramp </span>
+      </router-link>
+      <router-link to="/farming">
+        <span :class="a_class">Farming</span>
+      </router-link>
     </div>
-    <div class="connect">
-      <div class="switch" @click="toggleTheme">
+    <div class="flex items-center">
+      <div class="w-11 h-11 hover:cursor-pointer" @click="toggleTheme">
         <img
-          v-if="userTheme === 'dark-theme'"
+          v-if="userTheme === 'dark'"
           src="/src/assets/images/day.png"
           alt="Image"
         />
         <img v-else src="/src/assets/images/night.png" alt="Image" />
       </div>
 
-      <button id="show-modal" class="connect_button">connect wallet</button>
+      <button
+        id="show-modal"
+        class="
+          w-36
+          h-8
+          rounded-2xl
+          uppercase
+          text-xs
+          font-semibold
+          text-white
+          dark:text-primary
+          bg-primary
+          dark:bg-white
+          mx-8
+        "
+      >
+        connect wallet
+      </button>
     </div>
   </div>
 </template>
-
 <script>
 export default {
   data() {
     return {
-      userTheme: "light-theme",
+      userTheme: "light",
     };
   },
   mounted() {
@@ -47,10 +86,10 @@ export default {
   methods: {
     toggleTheme() {
       const activeTheme = localStorage.getItem("user-theme");
-      if (activeTheme === "light-theme") {
-        this.setTheme("dark-theme");
+      if (activeTheme === "light") {
+        this.setTheme("dark");
       } else {
-        this.setTheme("light-theme");
+        this.setTheme("light");
       }
     },
 
@@ -70,75 +109,12 @@ export default {
         "(prefers-color-scheme: dark)"
       ).matches;
       if (hasDarkPreference) {
-        return "dark-theme";
+        return "dark";
       } else {
-        return "light-theme";
+        return "light";
       }
     },
   },
 };
 </script>
 
-
-<style scoped>
-.navbar {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--background-color-primary);
-
-  /* box-shadow: 1px 1px 10px #06b6d4; */
-  box-shadow: var(--shadow-color-navbar);
-  width: 100vw;
-}
-.routers a {
-  color: var(--text-primary-color);
-}
-.connect {
-  display: flex;
-  align-items: center;
-}
-.connect_button {
-  width: 129px;
-  height: 28px;
-  background-color: var(--background-color-button);
-  border-radius: 15px;
-  text-transform: uppercase;
-  color: var(--button-text-color);
-  font-style: normal;
-  line-height: 16px;
-  align-items: center;
-  font-weight: 400;
-  font-size: 11px;
-  margin-right: 100px;
-  border: none;
-}
-.switch {
-  width: 45px;
-  height: 45px;
-  margin-right: 36px;
-  margin-left: 300px;
-}
-.switch:hover {
-  cursor: pointer;
-}
-.logo {
-  width: 90px;
-  height: 90px;
-  margin-right: 92px;
-}
-a {
-  color: #ffffff;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 600;
-  font-style: normal;
-  align-items: center;
-  text-transform: capitalize;
-  margin-left: 45px;
-}
-a:hover {
-  color: cyan;
-}
-</style>

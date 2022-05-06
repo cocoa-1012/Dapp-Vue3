@@ -7,7 +7,8 @@ const props = defineProps({
     default: "",
   },
 });
-
+const p_class =
+  "text-sm text-primary dark:text-white font-semibold text-left mb-3";
 const data_night = [
   {
     id: 1,
@@ -104,17 +105,23 @@ const count = ref(0);
 </script>
 
 <template>
-  <div class="footer">
-    <div class="description">
-      <div class="footer_title">
-        <img
-          src="/src/assets/images/footer-logo.png"
-          alt="Image"
-          class="logo"
-        />
-        <p></p>
+  <div class="flex">
+    <div class="mr-20">
+      <div>
+        <img src="/src/assets/images/footer-logo.png" alt="Image" />
       </div>
-      <div class="footer_desc">
+      <div
+        class="
+          flex
+          items-center
+          text-primary
+          dark:text-white
+          capitalize
+          text-xs
+          max-w-[260px]
+          text-left
+        "
+      >
         Ibiza Token is a Web3 ecosystem that counts on the utility token $IBZ,
         the NFT marketplace, and the IbizaPay mobile application and aims to
         turn Ibiza into a “crypto island” benchmark by connecting local
@@ -122,10 +129,13 @@ const count = ref(0);
         of blockchain technology by citizens and institutions.
       </div>
     </div>
-    <div class="contacts">
-      <div class="socials">
-        <p class="follow">Follow Us</p>
-        <div class="buttons" v-if="props.theme === 'dark-theme'">
+    <div>
+      <div>
+        <p :class="p_class">Follow Us</p>
+        <div
+          class="flex items-center justify-between"
+          v-if="props.theme === 'dark'"
+        >
           <a
             v-for="item in data_night"
             :key="item.id"
@@ -135,7 +145,7 @@ const count = ref(0);
             <img :src="getImageUrl(item.src)" alt="Image" class="logo" />
           </a>
         </div>
-        <div class="buttons" v-else>
+        <div class="flex items-center justify-between" v-else>
           <a
             v-for="item in data_day"
             :key="item.id"
@@ -147,11 +157,29 @@ const count = ref(0);
         </div>
       </div>
 
-      <div class="subscribe">
-        <p class="follow">Subscribe To The Newsletter</p>
+      <div class="mt-14">
+        <p :class="p_class">Subscribe To The Newsletter</p>
         <div>
-          <input class="sub_input" type="text" placeholder="Email" />
-          <button class="sub_button">Subscribe</button>
+          <input
+            class="bg-gray dark:bg-white rounded w-48 h-7"
+            type="text"
+            placeholder="Email"
+          />
+          <button
+            class="
+              h-7
+              text-sm
+              bg-secondary
+              dark:bg-white:
+              rounded-md
+              text-white
+              dark:text-white
+              mx-4
+              px-3
+            "
+          >
+            Subscribe
+          </button>
         </div>
       </div>
     </div>
@@ -159,58 +187,6 @@ const count = ref(0);
 </template>
 
 <style scoped>
-.footer {
-  display: flex;
-  justify-content: center;
-}
-.description {
-  margin-right: 100px;
-}
-.footer_desc {
-  display: flex;
-  align-items: center;
-  text-transform: capitalize;
-  font-weight: 400;
-  color: var(--text-primary-color);
-  width: 256px;
-  font-size: 11px;
-  text-align: left;
-}
-.follow {
-  font-size: 13px;
-  color: var(--text-primary-color);
-  font-weight: 500;
-  align-items: center;
-  text-align: left;
-  text-transform: capitalize;
-  margin-bottom: 12px;
-}
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.subscribe {
-  margin-top: 50px;
-}
-.sub_button {
-  background-color: #080a3e;
-  border-radius: 4px;
-  color: #ffffff;
-  width: 66px;
-  height: 26px;
-  line-height: 16.45px;
-  font-weight: 500;
-  font-size: 11px;
-  margin-left: 8px;
-  border: none;
-}
-.sub_input {
-  background-color: #c7c7ce;
-  border-radius: 4px;
-  width: 148px;
-  height: 26px;
-}
 ::placeholder {
   font-size: 10px;
   font-style: italic;
