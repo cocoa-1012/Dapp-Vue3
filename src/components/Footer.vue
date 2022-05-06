@@ -161,7 +161,17 @@ const count = ref(0);
         <p :class="p_class">Subscribe To The Newsletter</p>
         <div>
           <input
-            class="bg-gray dark:bg-white rounded w-48 h-7"
+            class="
+              bg-gray
+              dark:bg-white
+              rounded
+              w-48
+              h-7
+              placeholder-placeholder
+              italic
+              text-sm
+              pl-3
+            "
             type="text"
             placeholder="Email"
           />
@@ -186,13 +196,3 @@ const count = ref(0);
   </div>
 </template>
 
-<style scoped>
-::placeholder {
-  font-size: 10px;
-  font-style: italic;
-  color: #080a32;
-  padding-left: 10px;
-  text-align: left;
-  align-items: center;
-}
-</style>

@@ -15,9 +15,10 @@ module.exports = {
       gray: "#c7c7ce",
       grayshadow: "#d1d5db",
       white: "#ffffff",
-      nc_secondary: "#080a3e",
-      nc_shadow: "#1fb6ff",
-      nc_input: "#1fb6ff",
+      placeholder: "#080a32",
+      graybackground: "#f3f3f3",
+      inputbackground: "#aaaab6",
+      pinks: "#e20267",
     },
     fontFamily: {
       sans: ["Graphik", "sans-serif"],

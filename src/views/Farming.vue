@@ -1,7 +1,8 @@
 <template>
   <div
     class="
-      ttt
+      bg-graybackground
+      dark:bg-secondary
       flex flex-col
       items-left
       w-max
@@ -9,14 +10,26 @@
       py-[50px]
       my-[80px]
       rounded-[22px]
+      drop-shadow-2xl
     "
   >
-    <p class="farming text-left text-[36px] font-semibold mb-[43px]">Farming</p>
     <p
       class="
-        farming
+        text-primary
+        dark:text-white
+        text-left text-[36px]
+        font-semibold
+        mb-[43px]
+      "
+    >
+      Farming
+    </p>
+    <p
+      class="
+        text-primary
+        dark:text-white
         font-normal
-        text-[18px] text-white
+        text-[18px]
         w-[628px]
         text-left
         capitalize
@@ -29,42 +42,104 @@
       When you add or remove liquidity, your rewards are automatically transfer
       to your wallet.
     </p>
-    <div class="input_group">
+    <div class="flex mb-16">
       <div class="input_div">
-        <input type="number" value="0" />
-        <div class="input_value">
+        <input
+          type="number"
+          value="0"
+          class="
+            bg-white
+            dark:bg-primary
+            rounded-xl
+            h-16
+            w-[533px]
+            text-white
+            pl-5
+          "
+        />
+        <div
+          class="flex justify-between mt-6 text-md text-primary dark:text-white"
+        >
           <p>Your LP: 0</p>
           <p>Max</p>
         </div>
       </div>
-      <button>Approve LP</button>
+      <button
+        class="
+          bg-primary
+          border-solid border border-pinks
+          rounded-3xl
+          w-[210px]
+          h-12
+          ml-16
+          text-lg text-white
+        "
+      >
+        Approve LP
+      </button>
     </div>
-    <div class="input_group">
+    <div class="flex mb-16">
       <div class="input_div">
-        <input type="number" value="0" />
-        <div class="input_value">
+        <input
+          type="number"
+          value="0"
+          class="
+            bg-white
+            dark:bg-primary
+            rounded-xl
+            h-16
+            w-[533px]
+            text-white
+            pl-5
+          "
+        />
+        <div
+          class="flex justify-between mt-6 text-md text-primary dark:text-white"
+        >
           <p>Your iBFZ: 0</p>
           <p>Max</p>
         </div>
       </div>
-      <button>Approve LP</button>
+      <button
+        class="
+          bg-primary
+          border-solid border border-pinks
+          rounded-3xl
+          w-[210px]
+          h-12
+          ml-16
+          text-lg text-white
+        "
+      >
+        Approve LP
+      </button>
     </div>
     <div class="flex items-center">
-      <p class="actual_title text-[15px] font-semibold uppercase mr-[17px]">
+      <p
+        class="
+          text-primary
+          dark:text-white
+          text-md
+          font-semibold
+          uppercase
+          mr-4
+        "
+      >
         Actual Reward APR
       </p>
       <p
         class="
-          actual_value
           flex
           items-center
-          pl-[20px]
-          w-[108px]
-          h-[34px]
-          rounded-[6px]
+          pl-5
+          w-28
+          h-8
+          rounded
           font-semibold
           items-center
           text-white
+          bg-inputbackground
+          dark:bg-primary
         "
       >
         231.61%
@@ -72,55 +147,3 @@
     </div>
   </div>
 </template>
-
-<style scoped>
-.ttt {
-  background-color: var(--background-color-secondary);
-  box-shadow: var(--shadow-color-box);
-}
-.farming {
-  color: var(--text-primary-color);
-}
-.actual_apr {
-  display: flex;
-  align-items: center;
-}
-.actual_title {
-  color: var(--text-primary-color);
-}
-.actual_value {
-  background-color: var(--background-color-input);
-}
-.input_group {
-  display: flex;
-  margin-bottom: 63px;
-}
-button {
-  background-color: #00032a;
-  border: solid 1px #e20267;
-  border-radius: 219px;
-  width: 210px;
-  height: 48px;
-  margin-left: 58px;
-  font-size: 20px;
-  color: #ffffff;
-}
-input {
-  background-color: var(--background-color-input);
-  border-radius: 12px;
-  height: 57px;
-  width: 533px;
-  color: #ffffff;
-  padding-left: 20px;
-}
-
-.input_value {
-  display: flex;
-  justify-content: space-between;
-  font-size: 18px;
-  margin-top: 23px;
-}
-.input_value p {
-  color: var(--text-primary-color);
-}
-</style>
