@@ -6,32 +6,43 @@
       flex flex-col
       items-left
       max-w-4xl
-      w-4/5
-      px-[80px]
+      w-11/12
+      lg:4/5 lg:px-20
+      px-4
       py-[50px]
       my-[80px]
       rounded-[22px]
       drop-shadow-2xl
     "
   >
-    <p
-      class="
-        text-primary
-        dark:text-white
-        text-left text-[36px]
-        font-semibold
-        mb-[20px]
-      "
-    >
+    <p class="text-primary dark:text-white text-left text-[36px] font-semibold">
       Governance
     </p>
-    <p
-      class="text-primary dark:text-white text-left text-[20px] font-bold mb-12"
-    >
-      Proposals
-    </p>
-    <div class="flex flex-wrap">
-      <div class="mt-8">
+    <div class="flex items-center justify-between mt-12">
+      <p class="text-primary dark:text-white text-left text-[20px] font-bold">
+        Proposals
+      </p>
+      <button
+        class="
+          w-24
+          lg:w-36
+          h-8
+          rounded-2xl
+          uppercase
+          text-xs
+          font-semibold
+          text-white
+          dark:text-primary
+          bg-primary
+          dark:bg-white
+          lg:mx-8
+        "
+      >
+        Create New
+      </button>
+    </div>
+    <div class="flex flex-wrap justify-between">
+      <div class="mt-8 w-full lg:w-auto">
         <p class="text-primary dark:text-white text-left text-[12px] mb-3">
           Description
         </p>
@@ -42,10 +53,8 @@
             rounded-xl
             flex
             items-center
-            mr-[10px]
-            w-[287px]
+            lg:w-[287px]
             h-16
-            rounded-[12px]
           "
         ></div>
       </div>
@@ -60,10 +69,9 @@
             rounded-xl
             flex
             items-center
-            mr-[10px]
-            w-[82px]
+            w-32
+            lg:w-24
             h-16
-            rounded-[12px]
           "
         ></div>
       </div>
@@ -78,10 +86,9 @@
             rounded-xl
             flex
             items-center
-            mr-[10px]
-            w-[82px]
+            w-32
+            lg:w-24
             h-16
-            rounded-[12px]
           "
         ></div>
       </div>
@@ -96,10 +103,9 @@
             rounded-xl
             flex
             items-center
-            mr-[10px]
-            w-[82px]
+            w-32
+            lg:w-24
             h-16
-            rounded-[12px]
           "
         ></div>
       </div>
@@ -114,34 +120,14 @@
             rounded-xl
             flex
             items-center
-            mr-[10px]
-            w-[82px]
+            w-32
+            lg:w-24
             h-16
             rounded-[12px]
           "
         ></div>
       </div>
     </div>
-    <button
-      class="
-        absolute
-        top-24
-        right-28
-        w-36
-        h-8
-        rounded-2xl
-        uppercase
-        text-xs
-        font-semibold
-        text-white
-        dark:text-primary
-        bg-primary
-        dark:bg-white
-        mx-8
-      "
-    >
-      Create New
-    </button>
   </div>
 </template>
 
