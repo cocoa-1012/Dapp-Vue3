@@ -6,8 +6,8 @@
       flex flex-col
       items-left
       max-w-4xl
-      w-4/5
-      lg:px-20
+      w-11/12
+      lg:4/5 lg:px-20
       px-4
       py-[50px]
       my-[80px]

@@ -6,8 +6,9 @@
       flex flex-col
       items-left
       max-w-4xl
-      w-4/5
-      px-[80px]
+      w-11/12
+      lg:4/5 lg:px-20
+      px-4
       py-[50px]
       my-[80px]
       rounded-[22px]
@@ -45,10 +46,10 @@
           flex
           justify-center
           items-center
-          mr-[10px]
-          w-[119px]
+          mr-3
+          w-32
           h-16
-          rounded-[12px]
+          rounded-xl
         "
       >
         <img src="/src/assets/images/eth.png" alt="Image" class="w-7 h-7" />
@@ -143,10 +144,10 @@
           flex
           justify-center
           items-center
-          mr-[10px]
-          w-[119px]
+          mr-3
+          w-32
           h-16
-          rounded-[12px]
+          rounded-xl
         "
       >
         <img
