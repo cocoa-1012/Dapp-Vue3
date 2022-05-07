@@ -6,11 +6,12 @@
       flex flex-col
       items-left
       max-w-4xl
-      w-4/5
-      px-[80px]
-      py-[50px]
-      my-[80px]
-      rounded-[22px]
+      w-11/12
+      lg:4/5 lg:px-20
+      px-4
+      py-16
+      my-20
+      rounded-3xl
       drop-shadow-2xl
     "
   >
@@ -20,7 +21,7 @@
         dark:text-white
         text-left text-[36px]
         font-semibold
-        mb-[20px]
+        mb-5
       "
     >
       Fiat On-Ramp
@@ -50,14 +51,14 @@
           flex
           justify-center
           items-center
-          mr-[10px]
-          w-[119px]
+          mr-3
+          w-32
           h-16
-          rounded-[12px]
+          rounded-xl
         "
       >
         <img src="/src/assets/images/eur.png" alt="Image" class="eth" />
-        <p class="text-white text-[14px] ml-[15px]">ETH</p>
+        <p class="text-white text-[14px] ml-4">ETH</p>
       </div>
       <input
         type="text"
@@ -67,7 +68,7 @@
           dark:bg-primary
           rounded-xl
           h-16
-          w-full
+          lg:w-full
           text-white
           pl-5
         "
@@ -98,14 +99,14 @@
           flex
           justify-center
           items-center
-          mr-[10px]
-          w-[119px]
+          mr-3
+          w-32
           h-16
-          rounded-[12px]
+          rounded-xl
         "
       >
         <img src="/src/assets/images/usdc.png" alt="Image" class="eth" />
-        <p class="text-white text-[14px] ml-[15px]">USDC</p>
+        <p class="text-white text-[14px] ml-4">USDC</p>
       </div>
       <input
         type="text"
@@ -115,22 +116,22 @@
           dark:bg-primary
           rounded-xl
           h-16
-          w-full
+          lg:w-full
           text-white
           pl-5
         "
       />
     </div>
-    <div class="flex items-center justify-center mr-40 mt-20">
+    <div class="lg:flex items-center justify-center m-auto lg:mr-40 mt-20">
       <p
         class="
           text-primary
           dark:text-white
           text-[15px]
-          w-[150px]
+          w-40
           font-semibold
           uppercase
-          mr-[17px]
+          mr-4
           text-right
         "
       >
@@ -142,28 +143,31 @@
           dark:bg-primary
           flex
           items-center
-          pl-[10px]
-          w-[178px]
-          h-[34px]
-          rounded-[6px]
+          pl-4
+          w-48
+          h-8
+          rounded-md
           font-semibold
           items-center
           text-white
+          mt-4
+          lg:mt-10
         "
       >
         1&nbsp;USDC&nbsp;=&nbsp;1,023&nbsp;EUR
       </p>
     </div>
-    <div class="flex items-center justify-center mr-40 mt-10">
+    <div class="lg:flex items-center justify-center m-auto lg:mr-40">
       <p
         class="
           text-primary
           dark:text-white
           text-[15px]
-          w-[150px]
+          w-40
           font-semibold
           uppercase
-          mr-[17px]
+          mr-4
+          mt-10
           text-right
         "
       >
@@ -175,13 +179,15 @@
           dark:bg-primary
           flex
           items-center
-          pl-[60px]
-          w-[178px]
-          h-[34px]
-          rounded-[6px]
+          pl-16
+          w-48
+          h-8
+          rounded-md
           font-semibold
           items-center
           text-white
+          mt-4
+          lg:mt-10
         "
       >
         234&nbsp;USDC
@@ -192,12 +198,12 @@
         bg-primary
         border-solid border border-pinks
         rounded-3xl
-        w-[210px]
+        w-48
         h-12
         mt-20
         m-auto
         text-lg text-white
-        mt-[87px]
+        mt-20
       "
     >
       Connect Wallet

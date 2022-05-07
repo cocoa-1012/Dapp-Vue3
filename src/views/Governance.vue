@@ -9,9 +9,9 @@
       w-11/12
       lg:4/5 lg:px-20
       px-4
-      py-[50px]
-      my-[80px]
-      rounded-[22px]
+      py-16
+      my-20
+      rounded-3xl
       drop-shadow-2xl
     "
   >
@@ -123,7 +123,7 @@
             w-32
             lg:w-24
             h-16
-            rounded-[12px]
+            rounded-xl
           "
         ></div>
       </div>

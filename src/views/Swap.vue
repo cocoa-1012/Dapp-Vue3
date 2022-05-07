@@ -9,9 +9,9 @@
       w-11/12
       lg:4/5 lg:px-20
       px-4
-      py-[50px]
-      my-[80px]
-      rounded-[22px]
+      py-16
+      my-20
+      rounded-3xl
       drop-shadow-2xl
     "
   >
@@ -176,7 +176,7 @@
         bg-primary
         border-solid border border-pinks
         rounded-3xl
-        w-[210px]
+        w-48
         h-12
         mt-20
         m-auto
