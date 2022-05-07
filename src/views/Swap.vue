@@ -1,10 +1,12 @@
 <template>
   <div
     class="
-      ttt
+      bg-graybackground
+      dark:bg-secondary
       flex flex-col
       items-left
-      w-max
+      max-w-4xl
+      w-4/5
       px-[80px]
       py-[50px]
       my-[80px]
@@ -12,12 +14,34 @@
       drop-shadow-2xl
     "
   >
-    <p class="farming text-left text-[36px] font-semibold mb-[30px]">Swap</p>
-    <p class="aa text-[18px] font-semibold text-left my-3">From</p>
+    <p
+      class="
+        text-primary
+        dark:text-white
+        text-left text-[36px]
+        font-semibold
+        mb-[30px]
+      "
+    >
+      Swap
+    </p>
+    <p
+      class="
+        text-primary
+        dark:text-white
+        text-[18px]
+        font-semibold
+        text-left
+        my-3
+      "
+    >
+      From
+    </p>
     <div class="flex justify-between">
       <div
         class="
-          zz
+          bg-inputbackground
+          dark:bg-primary
           flex
           justify-center
           items-center
@@ -27,12 +51,35 @@
           rounded-[12px]
         "
       >
-        <img src="/src/assets/images/eth.png" alt="Image" class="eth" />
+        <img src="/src/assets/images/eth.png" alt="Image" class="w-7 h-7" />
         <p class="text-white text-[14px] ml-[15px]">ETH</p>
       </div>
-      <input type="text" value="0" />
+      <input
+        type="text"
+        value="0"
+        class="
+          bg-inputbackground
+          dark:bg-primary
+          rounded-xl
+          h-16
+          w-full
+          text-white
+          pl-5
+        "
+      />
     </div>
-    <p class="aa text-[18px] font-semibold text-right my-3">Max</p>
+    <p
+      class="
+        text-primary
+        dark:text-white
+        text-[18px]
+        font-semibold
+        text-right
+        my-3
+      "
+    >
+      Max
+    </p>
 
     <div class="flex items-center justify-between my-4">
       <svg
@@ -41,7 +88,7 @@
         viewBox="0 0 18 20"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        class="mm"
+        class="text-primary dark:text-white"
       >
         <path
           d="M6 6H3.275C4.12474 4.77696 5.34303 3.85743 6.75216 3.37554C8.16129 2.89365 9.68753 2.87461 11.1082 3.3212C12.529 3.76779 13.7698 4.65664 14.6498 5.8581C15.5298 7.05955 16.0028 8.51075 16 10H18C18.0009 8.13849 17.4245 6.32252 16.3503 4.80224C15.2761 3.28195 13.7569 2.13217 12.002 1.51126C10.2471 0.890354 8.3428 0.828883 6.55151 1.33531C4.76022 1.84175 3.17003 2.89116 2 4.339V2H0V8H6V6Z"
@@ -59,7 +106,7 @@
           viewBox="0 0 22 22"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          class="mm w-[18px] h-[18px] mx-3 w-5 h-5"
+          class="text-primary dark:text-white w-[18px] h-[18px] mx-3 w-5 h-5"
         >
           <path
             d="M11 0.875C5.417 0.875 0.875 5.417 0.875 11C0.875 16.583 5.417 21.125 11 21.125C16.583 21.125 21.125 16.583 21.125 11C21.125 5.417 16.583 0.875 11 0.875ZM11 18.875C6.658 18.875 3.125 15.342 3.125 11C3.125 6.658 6.658 3.125 11 3.125C15.342 3.125 18.875 6.658 18.875 11C18.875 15.342 15.342 18.875 11 18.875Z"
@@ -70,15 +117,29 @@
             fill="currentColor"
           />
         </svg>
-        <p class="circle-text text-[12px]">Add A Send (Optional)</p>
+        <p class="text-primary dark:text-white text-[12px]">
+          Add A Send (Optional)
+        </p>
       </div>
     </div>
 
-    <p class="aa text-[18px] font-semibold text-left my-3">To</p>
+    <p
+      class="
+        text-primary
+        dark:text-white
+        text-[18px]
+        font-semibold
+        text-left
+        my-3
+      "
+    >
+      To
+    </p>
     <div class="flex justify-between">
       <div
         class="
-          zz
+          bg-inputbackground
+          dark:bg-primary
           flex
           justify-center
           items-center
@@ -95,28 +156,39 @@
         />
         <p class="text-white text-[14px] ml-[15px]">IBZ</p>
       </div>
-      <input type="text" value="0" />
+      <input
+        type="text"
+        value="0"
+        class="
+          bg-inputbackground
+          dark:bg-primary
+          rounded-xl
+          h-16
+          w-full
+          text-white
+          pl-5
+        "
+      />
     </div>
-    <button class="mt-[87px] m-auto">Connect Wallet</button>
+    <button
+      class="
+        bg-primary
+        border-solid border border-pinks
+        rounded-3xl
+        w-[210px]
+        h-12
+        mt-20
+        m-auto
+        text-lg text-white
+      "
+    >
+      Connect Wallet
+    </button>
   </div>
 </template>
 
 <style>
-.circle-text {
-  color: var(--text-primary-color);
-}
-.eth {
-  width: 30px;
-  height: 30px;
-}
-.aa,
-.mm {
-  color: var(--text-primary-color);
-}
 .mm:hover {
   cursor: pointer;
-}
-.zz {
-  background-color: var(--background-color-input);
 }
 </style>

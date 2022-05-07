@@ -49,7 +49,7 @@
           type="number"
           value="0"
           class="
-            bg-white
+            bg-inputbackground
             dark:bg-primary
             rounded-xl
             h-16
@@ -85,7 +85,7 @@
           type="number"
           value="0"
           class="
-            bg-white
+            bg-inputbackground
             dark:bg-primary
             rounded-xl
             w-full
@@ -113,7 +113,7 @@
           text-lg text-white
         "
       >
-        Approve LP
+        Approve IBZF
       </button>
     </div>
     <div class="flex items-center">
