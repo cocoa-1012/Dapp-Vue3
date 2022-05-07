@@ -105,8 +105,8 @@ const count = ref(0);
 </script>
 
 <template>
-  <div class="flex">
-    <div class="mr-20">
+  <div class="lg:flex">
+    <div class="lg:mr-20">
       <div>
         <img src="/src/assets/images/footer-logo.png" alt="Image" />
       </div>
@@ -130,7 +130,7 @@ const count = ref(0);
       </div>
     </div>
     <div>
-      <div>
+      <div class="mt-12">
         <p :class="p_class">Follow Us</p>
         <div
           class="flex items-center justify-between"
@@ -157,7 +157,7 @@ const count = ref(0);
         </div>
       </div>
 
-      <div class="mt-14">
+      <div class="mt-8">
         <p :class="p_class">Subscribe To The Newsletter</p>
         <div>
           <input
