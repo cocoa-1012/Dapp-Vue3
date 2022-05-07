@@ -133,6 +133,8 @@
           uppercase
           mr-4
           text-right
+          mt-4
+          lg:mt-10
         "
       >
         Exchange&nbsp;Rate

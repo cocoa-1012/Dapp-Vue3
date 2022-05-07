@@ -33,7 +33,12 @@ const count = ref(0);
     "
   >
     <!-- Logo -->
-    <img src="/src/assets/images/logo.png" alt="Image" class="w-20 h-20 ml-8" />
+    <a href="/"
+      ><img
+        src="/src/assets/images/logo.png"
+        alt="Image"
+        class="w-20 h-20 ml-8"
+    /></a>
 
     <!-- Navigations -->
     <Popover>
