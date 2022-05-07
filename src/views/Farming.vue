@@ -10,7 +10,7 @@
       lg:4/5 lg:px-20
       px-4
       py-16
-      my-20
+      mb-20
       rounded-3xl
       drop-shadow-2xl
     "
