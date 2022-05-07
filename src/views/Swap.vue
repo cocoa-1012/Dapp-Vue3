@@ -47,7 +47,7 @@
           items-center
           mr-[10px]
           w-[119px]
-          h-[57px]
+          h-16
           rounded-[12px]
         "
       >
@@ -145,7 +145,7 @@
           items-center
           mr-[10px]
           w-[119px]
-          h-[57px]
+          h-16
           rounded-[12px]
         "
       >

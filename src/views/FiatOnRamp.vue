@@ -1,10 +1,12 @@
 <template>
   <div
     class="
-      ttt
+      bg-graybackground
+      dark:bg-secondary
       flex flex-col
       items-left
-      w-max
+      max-w-4xl
+      w-4/5
       px-[80px]
       py-[50px]
       my-[80px]
@@ -12,55 +14,118 @@
       drop-shadow-2xl
     "
   >
-    <p class="farming text-left text-[36px] font-semibold mb-[20px]">
+    <p
+      class="
+        text-primary
+        dark:text-white
+        text-left text-[36px]
+        font-semibold
+        mb-[20px]
+      "
+    >
       Fiat On-Ramp
     </p>
-    <p class="qq text-left text-[20px] font-bold my-6">
+    <p
+      class="text-primary dark:text-white text-left text-[20px] font-bold my-6"
+    >
       Select Currency And Payment Method
     </p>
-    <p class="aa text-[18px] font-semibold text-left my-3">Currency</p>
+    <p
+      class="
+        text-primary
+        dark:text-white
+        text-[18px]
+        font-semibold
+        text-left
+        my-3
+      "
+    >
+      Currency
+    </p>
     <div class="flex justify-between mb-20">
       <div
         class="
-          zz
+          bg-inputbackground
+          dark:bg-primary
           flex
           justify-center
           items-center
           mr-[10px]
           w-[119px]
-          h-[57px]
+          h-16
           rounded-[12px]
         "
       >
         <img src="/src/assets/images/eur.png" alt="Image" class="eth" />
         <p class="text-white text-[14px] ml-[15px]">ETH</p>
       </div>
-      <input type="text" value="0" />
+      <input
+        type="text"
+        value="0"
+        class="
+          bg-inputbackground
+          dark:bg-primary
+          rounded-xl
+          h-16
+          w-full
+          text-white
+          pl-5
+        "
+      />
     </div>
-    <p class="qq text-left text-[20px] font-bold my-6">Purchase Details</p>
-    <p class="aa text-[18px] font-semibold text-left my-3">Amount Estimated</p>
+    <p
+      class="text-primary dark:text-white text-left text-[20px] font-bold my-6"
+    >
+      Purchase Details
+    </p>
+    <p
+      class="
+        text-primary
+        dark:text-white
+        text-[18px]
+        font-semibold
+        text-left
+        my-3
+      "
+    >
+      Amount Estimated
+    </p>
     <div class="flex justify-between">
       <div
         class="
-          zz
+          bg-inputbackground
+          dark:bg-primary
           flex
           justify-center
           items-center
           mr-[10px]
           w-[119px]
-          h-[57px]
+          h-16
           rounded-[12px]
         "
       >
         <img src="/src/assets/images/usdc.png" alt="Image" class="eth" />
         <p class="text-white text-[14px] ml-[15px]">USDC</p>
       </div>
-      <input type="text" value="0" />
+      <input
+        type="text"
+        value="0"
+        class="
+          bg-inputbackground
+          dark:bg-primary
+          rounded-xl
+          h-16
+          w-full
+          text-white
+          pl-5
+        "
+      />
     </div>
     <div class="flex items-center justify-center mr-40 mt-20">
       <p
         class="
-          actual_title
+          text-primary
+          dark:text-white
           text-[15px]
           w-[150px]
           font-semibold
@@ -69,11 +134,12 @@
           text-right
         "
       >
-        Exchange Rate
+        Exchange&nbsp;Rate
       </p>
       <p
         class="
-          actual_value
+          bg-inputbackground
+          dark:bg-primary
           flex
           items-center
           pl-[10px]
@@ -85,13 +151,14 @@
           text-white
         "
       >
-        1 USDC = 1,023 EUR
+        1&nbsp;USDC&nbsp;=&nbsp;1,023&nbsp;EUR
       </p>
     </div>
     <div class="flex items-center justify-center mr-40 mt-10">
       <p
         class="
-          actual_title
+          text-primary
+          dark:text-white
           text-[15px]
           w-[150px]
           font-semibold
@@ -100,11 +167,12 @@
           text-right
         "
       >
-        You Will Get
+        You&nbsp;Will&nbsp;Get
       </p>
       <p
         class="
-          actual_value
+          bg-inputbackground
+          dark:bg-primary
           flex
           items-center
           pl-[60px]
@@ -116,12 +184,23 @@
           text-white
         "
       >
-        234 USDC
+        234&nbsp;USDC
       </p>
     </div>
-    <button class="mt-[87px] m-auto">Connect Wallet</button>
+    <button
+      class="
+        bg-primary
+        border-solid border border-pinks
+        rounded-3xl
+        w-[210px]
+        h-12
+        mt-20
+        m-auto
+        text-lg text-white
+        mt-[87px]
+      "
+    >
+      Connect Wallet
+    </button>
   </div>
 </template>
-
-<style>
-</style>

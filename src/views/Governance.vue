@@ -44,7 +44,7 @@
             items-center
             mr-[10px]
             w-[287px]
-            h-[57px]
+            h-16
             rounded-[12px]
           "
         ></div>
@@ -62,7 +62,7 @@
             items-center
             mr-[10px]
             w-[82px]
-            h-[57px]
+            h-16
             rounded-[12px]
           "
         ></div>
@@ -80,7 +80,7 @@
             items-center
             mr-[10px]
             w-[82px]
-            h-[57px]
+            h-16
             rounded-[12px]
           "
         ></div>
@@ -98,7 +98,7 @@
             items-center
             mr-[10px]
             w-[82px]
-            h-[57px]
+            h-16
             rounded-[12px]
           "
         ></div>
@@ -116,7 +116,7 @@
             items-center
             mr-[10px]
             w-[82px]
-            h-[57px]
+            h-16
             rounded-[12px]
           "
         ></div>
