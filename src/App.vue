@@ -2,8 +2,8 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import { ref } from "vue";
-// import Footer from "./components/Footer.vue";
-// import Navbar from "./components/Navbar.vue";
+import Footer from "./components/Footer.vue";
+import Navbar from "./components/Navbar.vue";
 
 const themeValue = ref("");
 const changeTheme = (theme) => {
@@ -12,12 +12,14 @@ const changeTheme = (theme) => {
 </script>
 
 <template>
-  <div>Please let me know the feedback.</div>
-  <!-- <Navbar msg="Hello Vue 3 + Vite" @change-theme="changeTheme" />
+  <marquee class="absolute m-auto top-32 text-cyan text-2xl">
+    Please let me know the feedback.
+  </marquee>
+  <Navbar msg="Hello Vue 3 + Vite" @change-theme="changeTheme" />
   <div class="show_background">
     <router-view />
     <Footer msg="Hello" :theme="themeValue" />
-  </div> -->
+  </div>
 </template>
 
 <style>
