@@ -12,9 +12,6 @@ const changeTheme = (theme) => {
 </script>
 
 <template>
-  <marquee class="absolute m-auto top-32 text-cyan text-2xl">
-    Please let me know the feedback.
-  </marquee>
   <Navbar msg="Hello Vue 3 + Vite" @change-theme="changeTheme" />
   <div class="show_background">
     <router-view />
