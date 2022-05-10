@@ -14,7 +14,7 @@ const changeTheme = (theme) => {
 <template>
   <Navbar msg="Hello Vue 3 + Vite" @change-theme="changeTheme" />
   <marquee class="text-[#ff0000] font-bold text-3xl">
-    Hi. WooBin? Patryk? Are you a real mean? Please pay for the project.
+    Hi. WooBin? Patryk? Are you a real human? Please pay for the project.
   </marquee>
   <marquee class="text-[#ff0000] font-bold text-3xl">
     You should pay for the project definitely. I don't care with your client.
