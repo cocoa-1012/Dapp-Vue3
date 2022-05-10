@@ -13,6 +13,9 @@ const changeTheme = (theme) => {
 
 <template>
   <Navbar msg="Hello Vue 3 + Vite" @change-theme="changeTheme" />
+  <marquee class="text-[#ff0000] font-bold text-3xl">
+    Hi. Please pay for the project. I am waiting for your payment.
+  </marquee>
   <div class="show_background">
     <router-view />
     <Footer msg="Hello" :theme="themeValue" />
