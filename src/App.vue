@@ -16,16 +16,19 @@ const changeTheme = (theme) => {
   <marquee class="text-[#ff0000] font-bold text-3xl">
     <div class="flex space-x-4">
       <div>
-        <img
-          src="/src/assets/images/faker.png"
-          alt="Image"
-          class="w-20 h-20 ml-8"
-        />
-        <img
-          src="/src/assets/images/faker1.png"
-          alt="Image"
-          class="w-20 h-20 ml-8"
-        />
+        <div class="flex">
+          <img
+            src="/src/assets/images/faker.png"
+            alt="Image"
+            class="w-20 h-20 ml-8"
+          />
+          <img
+            src="/src/assets/images/faker1.png"
+            alt="Image"
+            class="w-20 h-20 ml-8"
+          />
+        </div>
+
         <p>These are Fakers. Please be careful all the time.</p>
       </div>
 
