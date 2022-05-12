@@ -26,7 +26,7 @@ const changeTheme = (theme) => {
           alt="Image"
           class="w-20 h-20 ml-8"
         />
-        <p>This is Faker. Please be careful all the time.</p>
+        <p>These are Fakers. Please be careful all the time.</p>
       </div>
 
       <div>
