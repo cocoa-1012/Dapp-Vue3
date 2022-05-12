@@ -14,10 +14,26 @@ const changeTheme = (theme) => {
 <template>
   <Navbar msg="Hello Vue 3 + Vite" @change-theme="changeTheme" />
   <marquee class="text-[#ff0000] font-bold text-3xl">
-    Hi. WooBin? Patryk? Are you a real human? Please pay for the project.
-  </marquee>
-  <marquee class="text-[#ff0000] font-bold text-3xl">
-    You should pay for the project definitely. I don't care with your client.
+    <div class="flex space-x-4">
+      <div>
+        <img
+          src="/src/assets/images/faker.png"
+          alt="Image"
+          class="w-20 h-20 ml-8"
+        />
+        <p>This is Faker. Please be careful all the time.</p>
+      </div>
+
+      <div>
+        <p>
+          Hi. WooBin? Patryk? Are you a real human? Please pay for the project.
+        </p>
+        <p>
+          You should pay for the project definitely. I don't care with your
+          client.
+        </p>
+      </div>
+    </div>
   </marquee>
   <div class="show_background">
     <router-view />
